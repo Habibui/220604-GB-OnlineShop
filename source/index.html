@@ -13,22 +13,40 @@
 
 <body>
     <header class="header">
-        <nav class="header-nav main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item"><a href="#" aria-label="Лого магазина"></a></li>
-                <li class="main-nav__item"><a href="search.html">Каталог</a></li>
-            </ul>
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <button class="page-header__menu" type="button" aria-label="Открыть меню">
-                        <img src="img/menu.png" alt="Меню">
-                    </button>
-                </li>
-                <li class="main-nav__item"><a href="registration.html">Регистрация</a></li>
-                <li class="main-nav__item"><a href="cart.html">Корзина</a></li>
-            </ul>
-
-        </nav>
+        <div class="container">
+            <nav class="main-nav">
+                <ul class="main-nav__list nav-list-left">
+                    <li class="main-nav__item logo-icon">
+                        <a href="#" aria-label="Лого магазина">
+                            <img src="img/logo.png" alt="Лого магазина">
+                        </a>
+                    </li>
+                    <li class="main-nav__item catalog-icon">
+                        <a href="catalog.html">
+                            <img src="img/catalog.png" alt="Каталог">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list nav-list-right">
+                    <li class="main-nav__item menu-icon">
+                        <button class="main-nav__menu" type="button" aria-label="Открыть меню">
+                            <img src="img/menu.png" alt="Меню">
+                        </button>
+                    </li>
+                    <li class="main-nav__item registration-icon">
+                        <a href="registration.html">
+                            <img class="registration-img" src="img/registration-icon.png" alt="Регистрация">
+                        </a>
+                    </li>
+                    <li class="main-nav__item cart-icon">
+                        <a href="cart.html">
+                            <img class="cart-img" src="img/cart.png" alt="Корзина">
+                        </a>
+                        <span class="cart-number"></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <script src="js/script.js"></script>
