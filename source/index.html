@@ -49,29 +49,30 @@
 
     <main>
         <div class="brand">
-            <div class="brand_promo">
-                <div class="brand_image">
-                    <img class="brand_image-man" src="img/brand-man.png" alt="brand-man">
+            <div class="brand__promo">
+                <div class="brand__image">
+                    <img class="brand__image-man" src="img/brand-man.png" alt="brand-man">
+                    <!--Перенести как фоновое изображение? z-index-->
                 </div>
-                <div class="brand_title">
-                    <div class="brand_content">
-                        <h1 class="brand_header">THE BRAND</h1>
-                        <p class="brand_description">OF LUXERIOUS <span class="brand_description-strong">FASHION</span>
+                <div class="brand__title">
+                    <div class="brand__content">
+                        <h1 class="brand__header">THE BRAND</h1>
+                        <p class="brand__description">OF LUXERIOUS <span class="brand_description-strong">FASHION</span>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!--<div class="brand_menu menu vissually-hidden">
-                <button class="menu_button-close">
-                    <img class="menu_icon-close" src="images/close-icon.png" alt="Закрыть меню">
+            <!--<div class="brand__menu menu vissually-hidden">
+                <button class="menu__button-close">
+                    <img class="menu__icon-close" src="images/close-icon.png" alt="Закрыть меню">
                 </button>
 
-                <h3 class="menu_title">MENU</h3>
+                <h3 class="menu__title">MENU</h3>
 
-                <div class="menu_item">
-                    <h4 class="menu_header">MAN</h4>
-                    <ul class="menu_item-list">
+                <div class="menu__item">
+                    <h4 class="menu__header">MAN</h4>
+                    <ul class="menu__item-list">
                         <li><a href="#">Accessories</a></li>
                         <li><a href="#">Bags</a></li>
                         <li><a href="#">Denim</a></li>
@@ -79,9 +80,9 @@
                     </ul>
                 </div>
 
-                <div class="menu_item">
-                    <h4 class="menu_header">WOMAN</h4>
-                    <ul class="menu_item-list">
+                <div class="menu__item">
+                    <h4 class="menu__header">WOMAN</h4>
+                    <ul class="menu__item-list">
                         <li><a href="#">Accessories</a></li>
                         <li><a href="#">Jackets & Coats</a></li>
                         <li><a href="#">Polos</a></li>
@@ -90,9 +91,9 @@
                     </ul>
                 </div>
 
-                <div class="menu_item">
-                    <h4 class="menu_header">KIDS</h4>
-                    <ul class="menu_item-list">
+                <div class="menu__item">
+                    <h4 class="menu__header">KIDS</h4>
+                    <ul class="menu__item-list">
                         <li><a href="#">Accessories</a></li>
                         <li><a href="#">Jackets & Coats</a></li>
                         <li><a href="#">Polos</a></li>
@@ -103,6 +104,37 @@
                 </div>
             </div>-->
         </div>
+
+        <section class="offers container">
+            <div class="offers__item offers__women">
+                <img class="offers__image" src="img/offers-women.jpg" alt="">
+                <div class="offers__content">
+                    <p class="offers__description">30% off</p>
+                    <h3 class="offers__title">For women</h3>
+                </div>
+            </div>
+            <div class="offers__item offers__men">
+                <img class="offers__image" src="img/offers-men.jpg" alt="">
+                <div class="offers__content">
+                    <p class="offers__description">Hot deal</p>
+                    <h3 class="offers__title">For men</h3>
+                </div>
+            </div>
+            <div class="offers__item offers__kids">
+                <img class="offers__image" src="img/offers-kids.jpg" alt="">
+                <div class="offers__content">
+                    <p class="offers__description">New arrivals</p>
+                    <h3 class="offers__title">For kids</h3>
+                </div>
+            </div>
+            <div class="offers__item-last offers__accessories">
+                <img class="offers__image-last" src="img/offers-accesories.jpg" alt="">
+                <div class="offers__content">
+                    <p class="offers__description">Luxerious & trendy</p>
+                    <h3 class="offers__title">Accessories</h3>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="js/script.js"></script>
