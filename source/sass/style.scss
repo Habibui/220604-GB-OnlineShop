@@ -1,10 +1,10 @@
 /* Styles */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 /* Variables */
 
 $tablet-width: 768px;
-$desktop-width: 1600px;
+$desktop-width: 1200px;
 
 /* Mixins */
 
@@ -32,6 +32,7 @@ body {
     color: black;
     display: flex;
     flex-direction: column;
+    font-family: "Lato", sans-serif;
     margin: 0 auto;
     min-width: 320px;
     text-transform: uppercase;
@@ -52,16 +53,19 @@ body {
 
 .header {
     background-color: #222222;
+    padding: 18px 16px;
+    height: 74px;
+    box-sizing: border-box;
+}
+
+.header_wrapper {
+    margin: 0 auto;
 }
 
 .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    padding: 18px 16px;
-    min-height: 75px;
-
 
     &__list {
         display: flex;
@@ -101,19 +105,61 @@ body {
     text-align: center;
     right: -8px;
     top: -10px;
-    font-family: Lato, sans-serif;
     font-size: 12px;
     line-height: 17px;
 }
 
 .registration-img,
 .cart-img,
-.cart-number {
+.cart-number,
+.brand_image,
+.brand_menu {
     display: none;
 }
 
+.brand {
+    min-height: 363px;
+    background-color: #F1E4E6;
+}
+
+.brand_promo {
+    min-height: inherit;
+}
+
+.brand_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: inherit;
+}
+
+.brand_content {
+    border-left: 12px solid #F16D7F;
+    padding-left: 15px;
+}
+
+.brand_header {
+    @include style-reset;
+
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.brand_description {
+    @include style-reset;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.brand_description-strong {
+    color: #F16D7F;
+}
+
 @media (min-width: $tablet-width) {
-    .main-nav {
+    .header {
         padding: 18px 32px;
     }
 
@@ -126,11 +172,62 @@ body {
     .registration-icon {
         margin: 0 33px;
     }
+
+    .brand_promo {
+        display: flex;
+    }
+
+    .brand_image {
+        display: block;
+        width: 50%;
+    }
+
+    .brand_image-man {
+        display: block;
+        width: 100%;
+        min-width: inherit;
+    }
+
+    .brand_title {
+        width: 50%;
+    }
+
+    .brand_header {
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+    .brand_description {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 @media (min-width: $desktop-width) {
-    .container {
+    .main-nav {
         margin: 0 auto;
         width: 1140px;
+    }
+
+    .brand_title {
+        justify-content: start;
+    }
+
+    .brand_content {
+        margin-left: 64px;
+    }
+
+    .brand_header {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .brand_description {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .brand_menu {
+        display: block;
     }
 }
