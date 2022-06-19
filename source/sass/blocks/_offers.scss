@@ -38,16 +38,15 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    height: 111px;
     position: absolute;
 }
 
 .offers__description {
-    @include style-reset();
+    @include style-reset;
 }
 
 .offers__title {
-    @include style-reset();
+    @include style-reset;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;

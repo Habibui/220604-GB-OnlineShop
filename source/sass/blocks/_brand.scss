@@ -20,7 +20,7 @@
 }
 
 .brand__header {
-    @include style-reset();
+    @include style-reset;
 
     font-weight: 900;
     font-size: 38px;
@@ -28,7 +28,7 @@
 }
 
 .brand__description {
-    @include style-reset();
+    @include style-reset;
 
     font-weight: 700;
     font-size: 20px;

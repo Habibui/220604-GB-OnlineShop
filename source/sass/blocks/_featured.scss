@@ -26,6 +26,10 @@
     justify-content: space-between;
 }
 
+.featured__item {
+    z-index: -2;
+}
+
 .featured__image-block {
     position: relative;
 }
