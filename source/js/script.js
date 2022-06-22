@@ -18,13 +18,26 @@ filterButton.addEventListener('click', function () {
     }
 });
 
-/*filterButtonPopup.forEach(function (button) {
+/*filterButtonPopup.addEventListener('click', function () {
+    filterPopupMenu.classList.toggle('visually-hidden');
+    filterButtonPopup.classList.toggle('filter__popup-button--active');
+    /*if (filterButtonImage.getAttribute('src') === 'img/filter-dropdown.svg') {
+        filterButtonImage.setAttribute('src', 'img/filter-dropdown-pink.svg');
+    } else {
+        filterButtonImage.setAttribute('src', 'img/filter-dropdown.svg');
+    }
+});*/
+
+filterButtonPopup.forEach(function (button) {
     button.addEventListener('click', function () {
-        if (button.classList.contains('filter__popup-button--disable')) {
-            button.classList.remove('filter__popup-button--disable');
-            button.classList.remove('filter__popup-button--active');
-        }
-        classlist.toggle("visually-hidden")
+        button.classList.toggle('filter__popup-button--active');
+    })
+});
+
+/*let filterHeaders = document.querySelectorAll('.filterCategoryHeader');
+filterHeaders.forEach(function(header) {
+    header.addEventListener('click', function(event) {
+        event.target.nextElementSibling.classList.toggle('hidden');
     })
 });*/
 
