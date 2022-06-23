@@ -1,8 +1,8 @@
-.assortiment {
+.filter {
     padding: 0 8px;
 }
 
-.filter {
+.filter__assortiment {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,6 +93,9 @@
 
 .filter__menu-element {
     display: flex;
+    align-items: center;
+    border: none;
+    background-color: #ffffff;
 
     &:not(:last-child) {
         margin-right: 23px;
@@ -105,10 +108,11 @@
     line-height: 14px;
     color: #6F6E6E;
     margin-right: 9px;
+    text-transform: uppercase;
 }
 
 @media(min-width: $tablet-width) {
-    .assortiment {
+    .filter {
         padding: 0 16px;
     }
 
@@ -143,16 +147,16 @@
 }
 
 @media(min-width: $desktop-width) {
-    .assortiment {
+    .filter {
         padding: 0;
     }
 
-    .filter {
+    .filter__assortiment {
         margin: 51px auto 64px;
         justify-content: start;
     }
 
-    .filter__menu {
-        margin-left: 313px;
+    .filter__dropdown {
+        margin-right: 290px;
     }
 }
