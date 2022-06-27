@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 39px 9px 96px;
 }
 
@@ -47,6 +46,7 @@
     @include style-reset;
     font-size: 16px;
     line-height: 19px;
+    font-weight: 400;
     color: #222222;
     flex-grow: 1;
 }
@@ -112,13 +112,23 @@
 .shopping-cart__delivery__address-form {
     display: flex;
     flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.shopping-cart__delivery__address-form__title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .shopping-cart__delivery__address-form__input {
-    width: 100%;
+    width: 360px;
     height: 45px;
     border: 1px solid #A4A4A4;
     margin-top: 20px;
+    padding: 13px 17px;
+    font-family: inherit;
 }
 
 .shopping-cart__delivery__address-form__button {
@@ -133,7 +143,7 @@
 .shopping-cart__total-sum {
     background-color: #F5F3F3;
     padding: 39px 34px 42px 44px;
-    box-sizing: border-box;
+    height: 214px;
 }
 
 .shopping-cart__total-sum__button {
@@ -172,10 +182,6 @@
 }
 
 @media(min-width: $tablet-width) {
-    .shopping-cart__purchases {
-        min-width: 734px;
-    }
-
     .shopping-cart__purchases__item__image-block {
         width: 262px;
         height: 306px;
@@ -188,6 +194,7 @@
     .shopping-cart__purchases__item__name {
         font-size: 24px;
         line-height: 28px;
+        font-weight: 400;
     }
 
     .shopping-cart__purchases__item__description {
@@ -224,16 +231,16 @@
 
     .shopping-cart__delivery {
         display: flex;
-    }
-
-    .shopping-cart__delivery__address-form {
-        width: 50%;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
     }
 }
 
 @media(min-width: $desktop-width) {
     .shopping-cart {
         flex-direction: row;
+        align-items: flex-start;
     }
 
     .shopping-cart__purchases {
@@ -246,5 +253,15 @@
 
     .shopping-cart__purchases__buttons-wrap {
         min-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .shopping-cart__delivery {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .shopping-cart__delivery__address-form {
+        padding-top: 0;
     }
 }

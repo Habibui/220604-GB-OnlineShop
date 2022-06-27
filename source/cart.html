@@ -55,12 +55,12 @@
         </div>
         <div class="shopping-cart container">
             <div class="shopping-cart__purchases">
-                <section class="shopping-cart__purchases__item">
+                <div class="shopping-cart__purchases__item">
                     <div class="shopping-cart__purchases__item__image-block">
                         <img class="shopping-cart__purchases__item__image" src="img/featured-3.jpg"
                             alt="shopping-cart items">
                     </div>
-                    <div class="shopping-cart__purchases__item__info">
+                    <section class="shopping-cart__purchases__item__info">
                         <h4 class="shopping-cart__purchases__item__name">Mango people t&ndash;shirt</h4>
                         <p class="shopping-cart__purchases__item__description">Price:
                             <span class="shopping-cart__purchases__item__description-price">$300</span>
@@ -72,57 +72,57 @@
                             <span class="shopping-cart__purchases__item__description-text">Xl</span>
                         </p>
                         <div class="shopping-cart__purchases__item__form">
-                            <label for=""
-                                class="shopping-cart__purchases__item__description shopping-cart__purchases__item__label">Quantity:
+                            <label for="quantity" class="shopping-cart__purchases__item__description 
+                            shopping-cart__purchases__item__label">
+                                Quantity:
                             </label>
-                            <input
-                                class="shopping-cart__purchases__item__description shopping-cart__purchases__item__input"
-                                type="text" value="2">
+                            <input class="shopping-cart__purchases__item__description 
+                            shopping-cart__purchases__item__input" type="text" value="2" id="quantity">
                         </div>
-                    </div>
-                    <buttton class="shopping-cart__purchases__close-button">
-                        <img src="img/close-icon.svg" alt="close icon"
-                            class="shopping-cart__purchases__close-button__image">
-                    </buttton>
-                </section>
-                <section class="shopping-cart__purchases__item">
-                    <div class="shopping-cart__purchases__item__image-block">
-                        <img class="shopping-cart__purchases__item__image" src="img/featured-catalog-2.jpg"
-                            alt="shopping-card items">
-                    </div>
-                    <div class="shopping-cart__purchases__item__info">
-                        <h4 class="shopping-cart__purchases__item__name">Mango people t&ndash;shirt</h4>
-                        <p class="shopping-cart__purchases__item__description">Price:
-                            <span class="shopping-cart__purchases__item__description-price">$300</span>
-                        </p>
-                        <p class="shopping-cart__purchases__item__description">Color:
-                            <span class="shopping-cart__purchases__item__description-text">Red</span>
-                        </p>
-                        <p class="shopping-cart__purchases__item__description">Size:
-                            <span class="shopping-cart__purchases__item__description-text">Xl</span>
-                        </p>
-                        <div class="shopping-cart__purchases__item__form">
-                            <label for=""
-                                class="shopping-cart__purchases__item__description shopping-cart__purchases__item__label">Quantity:
-                            </label>
-                            <input
-                                class="shopping-cart__purchases__item__description shopping-cart__purchases__item__input"
-                                type="text" value="2">
-                        </div>
-                    </div>
+                    </section>
                     <buttton class="shopping-cart__purchases__close-button" type="button">
                         <img src="img/close-icon.svg" alt="close icon"
                             class="shopping-cart__purchases__close-button__image">
                     </buttton>
-                </section>
+                </div>
+                <div class="shopping-cart__purchases__item">
+                    <div class="shopping-cart__purchases__item__image-block">
+                        <img class="shopping-cart__purchases__item__image" src="img/featured-catalog-2.jpg"
+                            alt="shopping-card items">
+                    </div>
+                    <section class="shopping-cart__purchases__item__info">
+                        <h4 class="shopping-cart__purchases__item__name">Mango people t&ndash;shirt</h4>
+                        <p class="shopping-cart__purchases__item__description">Price:
+                            <span class="shopping-cart__purchases__item__description-price">$300</span>
+                        </p>
+                        <p class="shopping-cart__purchases__item__description">Color:
+                            <span class="shopping-cart__purchases__item__description-text">Red</span>
+                        </p>
+                        <p class="shopping-cart__purchases__item__description">Size:
+                            <span class="shopping-cart__purchases__item__description-text">Xl</span>
+                        </p>
+                        <div class="shopping-cart__purchases__item__form">
+                            <label for="quantity" class="shopping-cart__purchases__item__description 
+                            shopping-cart__purchases__item__label">
+                                Quantity:
+                            </label>
+                            <input class="shopping-cart__purchases__item__description 
+                                shopping-cart__purchases__item__input" type="text" value="2" id="quantity">
+                        </div>
+                    </section>
+                    <buttton class="shopping-cart__purchases__close-button" type="button">
+                        <img src="img/close-icon.svg" alt="close icon"
+                            class="shopping-cart__purchases__close-button__image">
+                    </buttton>
+                </div>
                 <div class="shopping-cart__purchases__buttons-wrap">
                     <button class="shopping-cart__purchases__buttons-wrap__button">Clear shopping cart</button>
                     <button class="shopping-cart__purchases__buttons-wrap__button">Continue shopping</button>
                 </div>
             </div>
             <div class="shopping-cart__delivery">
-                <form class="shopping-cart__delivery__address-form" action="">
-                    <label class="shopping-cart__delivery__address-form__label" for="">Shipping address</label>
+                <form class="shopping-cart__delivery__address-form">
+                    <h3 class="shopping-cart__delivery__address-form__title">Shipping address</h3>
                     <input class="shopping-cart__delivery__address-form__input" type="text" placeholder="Bangladesh">
                     <input class="shopping-cart__delivery__address-form__input" type="text" value="State">
                     <input class="shopping-cart__delivery__address-form__input" type="text"
