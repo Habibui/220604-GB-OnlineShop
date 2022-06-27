@@ -1,23 +1,29 @@
-.new-arrivals {
+.page-intro {
     background-color: #f8f3f4;
     min-height: 148px;
 }
 
-.new-arrivals__block {
+.page-intro__block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: inherit;
 }
 
-.new-arrivals__title {
+.page-intro__title {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: #f16d7f;
+    margin: 0;
 }
 
-.new-arrivals__link {
+.page-intro__nav {
+    padding-top: 32px;
+}
+
+.page-intro__link {
     text-decoration: none;
     font-weight: 300;
     font-size: 14px;
@@ -32,7 +38,7 @@
     }
 }
 
-.new-arrivals__span {
+.page-intro__span {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -41,16 +47,20 @@
 }
 
 @media(min-width: $tablet-width) {
-    .new-arrivals__block {
+    .page-intro__block {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 16px;
     }
+
+    .page-intro__nav {
+        padding-top: 0;
+    }
 }
 
 @media(min-width: $desktop-width) {
-    .new-arrivals__block {
+    .page-intro__block {
         padding: 0;
     }
 }

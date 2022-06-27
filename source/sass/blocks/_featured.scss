@@ -1,7 +1,7 @@
 .featured {
     padding-left: 8px;
     padding-right: 8px;
-    margin-bottom: 96px;
+    padding-bottom: 96px;
 }
 
 .featured__intro-title {
@@ -94,15 +94,17 @@
 }
 
 .featured__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.featured__button__link {
     text-decoration: none;
     text-transform: capitalize;
     color: #F26376;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid #FF6A6A;
     padding: 14px 38px;
-    margin: 41px auto 96px;
     width: 213px;
     font-size: 16px;
     line-height: 19px;
