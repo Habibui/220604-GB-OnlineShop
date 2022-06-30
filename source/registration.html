@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <ul class="main-nav__list nav-list-left">
+                <li class="main-nav__item logo-icon">
+                    <a href="index.html" aria-label="Лого магазина">
+                        <img src="img/logo.png" alt="Лого магазина">
+                    </a>
+                </li>
+                <li class="main-nav__item catalog-icon">
+                    <a href="catalog.html">
+                        <img src="img/catalog.png" alt="Каталог">
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__list nav-list-right">
+                <li class="main-nav__item menu-icon">
+                    <button class="main-nav__menu" type="button" aria-label="Открыть меню">
+                        <img src="img/menu.png" alt="Меню">
+                    </button>
+                </li>
+                <li class="main-nav__item registration-icon">
+                    <a href="registration.html">
+                        <img class="registration-img" src="img/registration-icon.png" alt="Регистрация">
+                    </a>
+                </li>
+                <li class="main-nav__item cart-icon">
+                    <a href="#">
+                        <img class="cart-img" src="img/cart.png" alt="Корзина">
+                    </a>
+                    <span class="cart-number">5</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-intro">
+            <div class="page-intro__block container">
+                <h2 class="page-intro__title">Registration</h2>
+            </div>
+        </div>
+        <div class="registration-content container">
+            <div class="registration-content__form registration-form">
+                <h3 class="registration-form__title">Your name</h3>
+                <input class="registration-form__input" type="text" placeholder="First name">
+                <input class="registration-form__input" type="text" placeholder="Last name">
+                <div class="registration-form__sex">
+                    <input class="registration-form__radio" type="radio" id="radio-other">
+                    <label class="registration-form__label" for="radio-male">Male</label>
+                    <input class="registration-form__radio" type="radio" id="radio-other">
+                    <label class="registration-form__label" for="radio-female">Female</label>
+                    <input class="registration-form__radio" type="radio" id="radio-other">
+                    <label class="registration-form__label" for="radio-other">Other</label>
+                </div>
+                <h3 class="registration-form__title">Login details</h3>
+                <input class="registration-form__input" type="text" placeholder="Email">
+                <input class="registration-form__input" type="text" placeholder="Password">
+                <p class="registration-form__description">
+                    Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                    letters
+                </p>
+                <button class="registration-form__button">
+                    <span class="registration-form__button-title">Join now</span>
+                    <img class="registration-form__button-icon" src="img/white-arrow-right.svg" alt="">
+                </button>
+            </div>
+            <div class="registration-content__advantages registration-advantages">
+                <h3 class="registration-advantages__title">Loyalty has its perks</h3>
+                <p class="registration-advantages__text">
+                    Get in on the loyalty program where you can earn points and
+                    unlock serious perks. Starting with these
+                    as soon as you join:
+                </p>
+                <ul class="registration-advantages__list">
+                    <li class="registration-advantages__list-element">15% off welcome offer</li>
+                    <li class="registration-advantages__list-element">Free shipping, returns and exchanges on all orders
+                    </li>
+                    <li class="registration-advantages__list-element">$10 off a purchase on your birthday</li>
+                    <li class="registration-advantages__list-element">Early access to products</li>
+                    <li class="registration-advantages__list-element">Exclusive offers & rewards</li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="subscribe__list container">
+                <div class="subscribe__intro">
+                    <img class="subscribe__image" src="img/subscribe-image.png" alt="">
+                    <p class="subscribe__intro-text">
+                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="subscribe__obliques">a
+                            pulvinar purus condimentum“</span>
+                    </p>
+                </div>
+                <section class="subscribe__section">
+                    <h3 class="subscribe__title">Subscribe</h3>
+                    <p class="subscribe__text">For our newletter and promotion</p>
+                    <form class="subscribe__form" action="#">
+                        <input class="subscribe__input" type="email" placeholder="Enter your email">
+                        <button class="subscribe__input-button">Subscribe</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="social container">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a href="https://facebook.com/" class="social__item-link social__item-link--facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://instagram.com/" class="social__item-link social__item-link--instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="" class="social__item-link social__item-link--pinterest">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://twitter.com/" class="social__item-link social__item-link--twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__copyright-text">&copy;2021 Brand All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1379,7 +1379,6 @@ body {
 .shopping-cart__total-sum {
   background-color: #F5F3F3;
   padding: 39px 34px 42px 44px;
-  height: 214px;
 }
 
 .shopping-cart__total-sum__button {
@@ -1501,6 +1500,175 @@ body {
   }
   .shopping-cart__delivery__address-form {
     padding-top: 0;
+  }
+}
+
+.registration-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 9px 96px;
+}
+
+@media (min-width: 768px) {
+  .registration-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 40px 16px 96px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .registration-content {
+    padding: 64px 0px 96px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.registration-form {
+  max-width: 360px;
+}
+
+.registration-form__title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+
+.registration-form__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #A4A4A4;
+}
+
+.registration-form__input:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.registration-form__input::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+
+.registration-form__input:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.registration-form__input::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.registration-form__input::placeholder {
+  color: #b1b1b1;
+}
+
+.registration-form__label {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: none;
+}
+
+.registration-form__description {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: none;
+  color: #B1B1B1;
+  margin-bottom: 40px;
+}
+
+.registration-form__button {
+  color: #ffffff;
+  background-color: #F16D7F;
+  padding: 16px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 167px;
+}
+
+.registration-advantages {
+  max-width: 360px;
+}
+
+.registration-advantages__title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.registration-advantages__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: none;
+}
+
+.registration-advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: none;
+  list-style: none;
+}
+
+.registration-advantages__list-element {
+  background: url("../../img/registration-marker.png") no-repeat;
+  padding-left: 45px;
+}
+
+.registration-advantages__list-element:not(:first-child) {
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .registration-advantages {
+    padding-top: 25px;
+    max-width: 652px;
+  }
+  .registration-advantages__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .registration-advantages__text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .registration-advantages__list {
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 /*# sourceMappingURL=style.css.map */
