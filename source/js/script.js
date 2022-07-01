@@ -40,12 +40,3 @@ filterHeaders.forEach(function(header) {
         event.target.nextElementSibling.classList.toggle('hidden');
     })
 });*/
-
-
-/*navClose.addEventListener('click', function () {
-    if (navMain.classList.contains('main-nav--opened')) {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-      navOpen.classList.remove('page-header__menu-open--disable');
-    }
-  });*/
