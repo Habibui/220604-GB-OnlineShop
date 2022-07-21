@@ -99,7 +99,7 @@
     padding-top: 40px;
 }
 
-.featured__button__link {
+.featured__button-link {
     text-decoration: none;
     text-transform: capitalize;
     color: #F26376;
@@ -111,7 +111,6 @@
 }
 
 @media(min-width: $tablet-width) {
-
     .featured__item {
         width: 50%;
         padding: 8px;
@@ -119,7 +118,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
     .featured__item {
         width: 33%;
     }
