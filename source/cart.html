@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <ul class="main-nav__list nav-list-left">
+                <li class="main-nav__item logo-icon">
+                    <a href="index.html" aria-label="Лого магазина">
+                        <img src="img/logo.png" alt="Лого магазина">
+                    </a>
+                </li>
+                <li class="main-nav__item catalog-icon">
+                    <a href="catalog.html">
+                        <img src="img/catalog.png" alt="Каталог">
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__list nav-list-right">
+                <li class="main-nav__item menu-icon">
+                    <button class="main-nav__menu" type="button" aria-label="Открыть меню">
+                        <img src="img/menu.png" alt="Меню">
+                    </button>
+                </li>
+                <li class="main-nav__item registration-icon">
+                    <a href="registration.html">
+                        <img class="registration-img" src="img/registration-icon.png" alt="Регистрация">
+                    </a>
+                </li>
+                <li class="main-nav__item cart-icon">
+                    <a href="#">
+                        <img class="cart-img" src="img/cart.png" alt="Корзина">
+                    </a>
+                    <span class="cart-number">5</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-intro">
+            <div class="page-intro__block container">
+                <h2 class="page-intro__title">Shopping cart</h2>
+            </div>
+        </div>
+        <div class="shopping-cart container">
+            <div class="shopping-cart__purchases cart-purchases">
+                <div class="cart-purchases__item">
+                    <div class="cart-purchases__image-wrap">
+                        <img class="cart-purchases__image" src="img/featured-3.jpg" alt="shopping-cart items">
+                    </div>
+                    <section class="cart-purchases__featured">
+                        <h4 class="cart-purchases__item-name">Mango people t&ndash;shirt</h4>
+                        <p class="cart-purchases__item-description">Price:
+                            <span class="cart-purchases__item-price">$300</span>
+                        </p>
+                        <p class="cart-purchases__item-description">Color:
+                            <span class="cart-purchases__item-description-text">Red</span>
+                        </p>
+                        <p class="cart-purchases__item-description">Size:
+                            <span class="cart-purchases__item-description-text">Xl</span>
+                        </p>
+                        <div class="cart-purchases__item-form">
+                            <label class="cart-purchases__item-description 
+                            cart-purchases__item-label">
+                                Quantity:
+                                <input class="cart-purchases__item-input" type="text" value="2">
+                            </label>
+                        </div>
+                    </section>
+                    <buttton class="cart-purchases__close-button" type="button">
+                        <img src="img/close-icon.svg" alt="close icon" class="cart-purchases__close-button__image">
+                    </buttton>
+                </div>
+                <div class="cart-purchases__item">
+                    <div class="cart-purchases__image-wrap">
+                        <img class="cart-purchases__image" src="img/featured-catalog-2.jpg" alt="shopping-card items">
+                    </div>
+                    <section class="cart-purchases__featured">
+                        <h4 class="cart-purchases__item-name">Mango people t&ndash;shirt</h4>
+                        <p class="cart-purchases__item-description">Price:
+                            <span class="cart-purchases__item-price">$300</span>
+                        </p>
+                        <p class="cart-purchases__item-description">Color:
+                            <span class="cart-purchases__item-description-text">Red</span>
+                        </p>
+                        <p class="cart-purchases__item-description">Size:
+                            <span class="cart-purchases__item-description-text">Xl</span>
+                        </p>
+                        <div class="cart-purchases__item-form">
+                            <label class="cart-purchases__item-description 
+                            cart-purchases__item-label">
+                                Quantity:
+                                <input class="cart-purchases__item-input" type="text" value="2">
+                            </label>
+
+                        </div>
+                    </section>
+                    <buttton class="cart-purchases__close-button" type="button">
+                        <img src="img/close-icon.svg" alt="close icon" class="cart-purchases__close-button__image">
+                    </buttton>
+                </div>
+                <div class="cart-purchases__buttons-wrap">
+                    <button class="cart-purchases__button">Clear shopping cart</button>
+                    <button class="cart-purchases__button">Continue shopping</button>
+                </div>
+            </div>
+            <div class="shopping-cart__delivery">
+                <form class="shopping-cart__address-form address-form">
+                    <h3 class="address-form__title">Shipping address</h3>
+                    <input class="address-form__input" type="text" placeholder="Bangladesh">
+                    <input class="address-form__input" type="text" value="State">
+                    <input class="address-form__input" type="text" value="Postcode &frasl; Zip">
+                    <button class="address-form__button">Get a quote</button>
+                </form>
+                <div class="shopping-cart__price">
+                    <p class="shopping-cart__sub-price">Sub total <span>$900</span></p>
+                    <p class="shopping-cart__total-price">Grand total <span>$900</span></p>
+                    <button class="shopping-cart__button">Proceed to checkout</button>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="subscribe__list container">
+                <div class="subscribe__intro">
+                    <img class="subscribe__image" src="img/subscribe-image.png" alt="">
+                    <p class="subscribe__intro-text">
+                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="subscribe__obliques">a
+                            pulvinar purus condimentum“</span>
+                    </p>
+                </div>
+                <section class="subscribe__section">
+                    <h3 class="subscribe__title">Subscribe</h3>
+                    <p class="subscribe__text">For our newletter and promotion</p>
+                    <form class="subscribe__form" action="#">
+                        <input class="subscribe__input" type="email" placeholder="Enter your email">
+                        <button class="subscribe__input-button">Subscribe</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="social container">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a href="https://facebook.com/" class="social__item-link social__item-link--facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://instagram.com/" class="social__item-link social__item-link--instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="" class="social__item-link social__item-link--pinterest">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://twitter.com/" class="social__item-link social__item-link--twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__copyright-text">&copy;2021 Brand All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

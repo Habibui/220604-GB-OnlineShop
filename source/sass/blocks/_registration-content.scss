@@ -1,0 +1,22 @@
+.registration-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 9px 96px;
+}
+
+@media (min-width: $tablet-width) {
+    .registration-content {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 40px 16px 96px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .registration-content {
+        padding: 64px 0px 96px;
+        justify-content: space-between;
+    }
+}

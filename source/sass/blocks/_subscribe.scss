@@ -1,0 +1,106 @@
+.subscribe {
+    background: rgba(244, 244, 244, 0.7) url(../img/subscribe-background.jpg) no-repeat;
+    background-size: cover;
+    padding: 54px 14px 109px;
+}
+
+.subscribe__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe__intro-text {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: none;
+    max-width: 330px;
+}
+
+.subscribe__oblique {
+    font-style: oblique;
+}
+
+.subscribe__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.subscribe__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    @include style-reset;
+}
+
+.subscribe__text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 22px;
+}
+
+.subscribe__form {
+    display: flex;
+    justify-content: center;
+    height: 47px;
+}
+
+.subscribe__input {
+    width: 199px;
+    height: inherit;
+    background-color: #E1E1E1;
+    border: none;
+    padding: 6px 21px;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.subscribe__input::-webkit-input-placeholder,
+.subscribe__input::-moz-placeholder,
+.subscribe__input::-ms-input-placeholder {
+    color: #222224;
+    opacity: 0.7;
+    font-family: inherit;
+}
+
+.subscribe__input-button {
+    @include style-reset;
+    height: inherit;
+    border: none;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #F16D7F;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 17px;
+}
+
+@media(min-width: $tablet-width) {
+
+    .subscribe__intro-text {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 360px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+
+    .subscribe__list {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

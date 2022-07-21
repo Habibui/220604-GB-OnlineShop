@@ -1,0 +1,56 @@
+.registration-advantages {
+    max-width: 360px;
+}
+
+.registration-advantages__title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.registration-advantages__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: none;
+}
+
+.registration-advantages__list {
+    @include style-reset;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: none;
+    list-style: none;
+}
+
+.registration-advantages__list-element {
+    background: url("../img/registration-marker.png") no-repeat;
+    padding-left: 45px;
+}
+
+.registration-advantages__list-element:not(:first-child) {
+    margin-top: 20px;
+}
+
+@media (min-width: $desktop-width) {
+    .registration-advantages {
+        padding-top: 25px;
+        max-width: 652px;
+    }
+
+    .registration-advantages__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .registration-advantages__text {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .registration-advantages__list {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
